@@ -1,0 +1,374 @@
+:root {
+    --WhiteColor: hsl(0, 0%, 100%);
+    --toggleBtnTheme1: hsl(223, 31%, 20%);
+    --bgCovertheme1: hsl(222, 26%, 31%);
+    --keyToggleTheme1: hsl(6, 63%, 50%);
+    --bgScreenThemeOne: hsl(224, 36%, 15%);
+    --bgEqual: hsl(6, 63%, 50%);
+    --bgDelReset: rgb(100, 114, 153);
+    --bgshadowDel: rgb(82 94 131);
+    --mt: 20px;
+    --mb: 20px;
+
+    /* ===themeTwo */
+    --bgBody : hsl(0, 0%, 90%);
+    --bgScreen : hsl(0, 0%, 93%);
+    --bgKeyboard : hsl(0, 5%, 81%);
+    --bgkeyNum : hsl(45, 7%, 89%);
+    --shadowKeyNum :hsl(0, 0%, 63%);
+    --bgkeyEqual : hsl(25, 98%, 40%) ;
+    
+    /* === theme  */
+    --bgBodyTheme3 : hsl(268, 75%, 9%);
+    --bgScreenTheme3 : hsl(268, 71%, 12%);
+    --bgkeyNumTheme3 : hsl(268, 47%, 21%);
+    --shadowKeyNumTheme3 :hsl(290, 70%, 36%);
+    --bgkeyEqualTheme3 : hsl(176, 100%, 44%) ;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bgCovertheme1);
+}
+
+
+body.designOne {
+    background-color: var(--bgCovertheme1);
+}
+
+body.designtwo {
+    background-color: var(--bgBody);
+}
+
+body.designThree {
+    background-color: var(--bgBodyTheme3);
+}
+/* ==============
+===== Box 
+=================*/
+.app .box {
+    width: 450px;
+    max-width: 500px;
+    position: relative;
+}
+
+.app .box .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.app .box .up {
+    position: absolute;
+    top: -6px;
+    z-index: 12;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--WhiteColor);
+}
+
+.app .box .one {
+    right: 40px;
+
+}
+
+.app .box .two {
+    right: 25px;
+
+}
+
+.app .box .three {
+    right: 10px;
+
+}
+.app .box .header .logo {
+    font-size: 30px;
+}
+.designOne .app .box .one,
+.designOne .app .box .two,
+.designOne .app .box .three {
+    color: var(--WhiteColor);
+}
+
+.designtwo .app .box .one,
+.designtwo .app .box .two,
+.designtwo .app .box .three {
+    color: rgb(0, 0, 0);
+}
+.designThree .app .box .one,
+.designThree .app .box .two ,
+.designThree .app .box .three {
+    color: hsl(52, 100%, 62%);
+}
+.designOne .app .box .header .logo {
+    color: white;
+}
+.designtwo .app .box .header .logo {
+    color: rgb(0, 0, 0);
+}
+
+.designThree .app .box .header .logo {
+    color: hsl(52, 100%, 62%);
+
+}
+/* ==============
+===== toggle 
+=================*/
+.app .box .header .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .box .header .toggle .theme {
+    margin-right: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.designOne .app .box .header .toggle .theme {
+    color: white;
+
+}
+
+.designtwo .app .box .header .toggle .theme {
+    color: hsl(60, 10%, 19%)
+}
+
+.designThree .app .box .header .toggle .theme {
+    color: hsl(52, 100%, 62%);
+
+}
+
+.app .box .header .toggle .toggele-btn-holder {
+    background-color: transparent;
+    border: 1px solid #cccccc46;
+    border-radius: 20px;
+    height: 22px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.app .box .header .toggle .toggele-btn-holder.two {
+    justify-content: center;
+}
+
+.app .box .header .toggle .toggele-btn {
+    width: 44px;
+    height: 15px;
+    outline: none;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+.app .box .header .toggle .toggele-btn::-webkit-slider-thumb {
+    appearance: none;
+    background-color: var(--bgEqual);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 3px
+}
+
+.designOne .app .box .header .toggle .toggele-btn::-webkit-slider-thumb {
+    background-color: var(--bgEqual);
+}
+
+.designtwo .app .box .header .toggle .toggele-btn::-webkit-slider-thumb {
+    background-color: var(--bgkeyEqual);
+}
+
+.designThree .app .box .header .toggle .toggele-btn::-webkit-slider-thumb {
+    background-color: var(--bgkeyEqualTheme3);
+}
+/* ==============
+===== screen 
+=================*/
+.app .screen {
+    border-radius: 6px;
+    margin-top: var(--mt);
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    background-color: var(--bgScreenThemeOne);
+    color: var(--WhiteColor);
+}
+
+.designOne .app .screen {
+    background-color: var(--bgScreenThemeOne);
+    color: var(--WhiteColor);
+}
+
+.designtwo .app .screen {
+    background-color: var(--bgScreen);
+    color: hsl(0, 0%, 5%)
+}
+
+.designThree .app .screen {
+    background-color: var(--bgScreenTheme3);
+    color: hsl(52, 100%, 62%)
+}
+/* ==============
+===== keyboard 
+=================*/
+.number {
+    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: var(--mt);
+    border-radius: 6px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.designOne .number {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.designtwo .number {
+    background-color: var(--bgKeyboard);
+}
+
+.designThree .number {
+    background-color: var(--bgScreenTheme3);
+}
+
+.number span {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px 2px 0px hsl(28, 16%, 65%);
+    user-select: none;
+}
+
+.designOne .number span {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px 2px 0px hsl(28, 16%, 65%);
+    color: #5e5e5e;
+}
+
+
+.designtwo .number span {
+    background-color: var(--bgkeyNum);
+    box-shadow: 0px 4px 2px 0px hsl(0, 0%, 63%);
+    color: hsl(60, 10%, 19%);
+}
+
+.number .reset,
+.number .del {
+    background-color: var(--bgDelReset);
+    box-shadow: 0px 4px 0px 0px var(--bgshadowDel);
+    color: var(--WhiteColor);
+}
+
+.designOne .number span.del,
+.designOne .number span.reset {
+    background-color: var(--bgDelReset);
+    box-shadow: 0px 4px 0px 0px var(--bgshadowDel);
+    color: var(--WhiteColor);
+}
+
+.designOne .number span.equal {
+    background-color: var(--bgEqual);
+    box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+    color: var(--WhiteColor);
+}
+
+.designThree .number span {
+    background-color: var(--bgkeyNumTheme3);
+    box-shadow: 0px 4px 2px 0px var(--shadowKeyNumTheme3);
+    color: hsl(52, 100%, 62%);
+}
+
+.designThree .number span.del,
+.designThree .number span.reset {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 4px 2px 0px hsl(285, 91%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.designtwo .number span.del,
+.designtwo .number span.reset {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 4px 2px 0px hsl(185, 58%, 25%);
+    color: hsl(0, 0%, 100%);
+}
+
+.designtwo .number span.equal {
+    background-color: var(--bgkeyEqual);
+    box-shadow: 0px 4px 2px 0px hsl(25, 99%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+
+.designThree .number span.equal {
+    background-color: var(--bgkeyEqualTheme3);
+    box-shadow: 0px 4px 2px 0px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+.number .reset {
+    grid-column: 1/span 2;
+    color: var(--WhiteColor);
+}
+
+.number .equal {
+    grid-column: 3 /span 2;
+    background-color: var(--bgEqual);
+    box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+    color: var(--WhiteColor);
+
+}
+
+
+
+/* ==============
+===== media 
+=================*/
+@media (max-width : 767px) {
+    .app .box {
+        max-width: 300px;
+    }
+
+    .number {
+        grid-template-columns: repeat(4, 50px);
+    }
+
+    .number span {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    :root {
+        --mt: 10px
+    }
+}
